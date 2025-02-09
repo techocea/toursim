@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking Form</title>
+    <link rel="stylesheet" href="css/bookingcss.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo2.jpg" class="Logo">
+            <ul class="nav-link">
+                <li><a href="newindex.html">Home</a></li>
+                <li><a href="daytour.html">Day Tour</a></li>
+                <li><a href="combopackage.html">Combo Package</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li> <a href="login.html">Login</a></li>
+                <li><a href="sign.html">Register</a></li>
+            </ul>
+            <div class="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="booking-page">
+        <div class="image" >
+        </div>
+        <div class="book">
+            <div class="book-box">
+                <h2>BOOK NOW</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"  required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"required>
+
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="tel" id="whatsapp" name="whatsapp"required>
+
+            <label for="start-date">Travel Start Date</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">Travel End Date</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="persons">Number of Persons</label>
+            <input type="number" id="persons" name="persons" required>
+
+            <label for="children">Number of Children</label>
+            <input type="number" id="children" name="children" required>
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit Booking</button>
+
+            <p>We will contact you within 24 hours to confirm your booking.</p>
+        </form>
+    </div>
+</div>
+</div>
+     
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

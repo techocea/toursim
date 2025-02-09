@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-image: url(images/gallery-2.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+    position: relative;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.Logo {
+    width: 200px;
+    height:100px;
+    background-size: cover;
+    
+ }
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    transition: 0.3s;
+   
+}
+
+.nav-link li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+
+}
+
+
+.Menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.Menu span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+.description1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+
+   
+}
+
+.description1 h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.card {
+    width:90%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    margin:auto;
+
+  }
+  
+  .day {
+    background: rgb(22, 69, 93);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 20px;
+    line-height: 2;
+  }
+  
+  .content h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .images {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .images img {
+    width: 500px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+  }
+  .th2{
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0;
+    font-weight: 800;
+  }
+  .book-btn{
+    text-align: center;
+    margin:50px 0;
+    font-size: 18px;  
+}
+  .booknow{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+  .booknow:hover{
+    background-color:rgb(3, 3, 3,0.5);
+}
+  footer{
+    background-color:black;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    width:100%;
+    box-sizing:border-box;
+   
+}
+.footer-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:100%;
+    padding:30px 0;
+    margin: 0 auto;
+}
+
+.footer-item h3{
+font-size:1.5rem;
+margin-bottom:10px;
+}
+.footer-item p{
+    margin:5px 0;
+}
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:10px;
+}
+.social-link{
+    color:white;
+    font-size:1.5rem;
+    
+}
+.social-link:hover{
+    transform:scale(1.2);
+}
+.social-link:nth-child(1):hover{
+    color:#426782;
+}
+.social-link:nth-child(2):hover{
+    color:#1DA1F2;
+}
+.social-link:nth-child(3):hover{
+    color:#E1306C;
+}
+.social-link:nth-child(4):hover{
+    color:#25D366;
+}
+.social-link:nth-child(5):hover{
+    color:#ff0000;
+}
+.footer-bottom{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    width:100%;
+    padding:10px 0;
+    
+}
+/* === Default (for large screens) === */
+@media (max-width: 1200px) {
+    nav .nav-link {
+        display: none;
+    }
+    .Logo {
+        width: 130px;
+    }
+
+    .Menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav-link.active {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-link li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+  
+    
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* === Medium Screens (990px) === */
+@media (max-width: 990px) {
+   
+
+    header {
+        height: 350px;
+    }
+
+    .description1 h1 {
+        font-size: 40px;
+    }
+   
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .headers {
+        height: 300px;
+    }
+
+    .description1 h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Logo {
+        width: 100px;
+        height:50px;
+    }
+}
+
+/* === Mobile Screens (450px) === */
+@media (max-width: 450px) {
+    .headers {
+        height: 250px;
+    }
+
+    .description1 h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .footer-item h3 {
+        font-size: 20px;
+    }
+
+    .footer-item p {
+        font-size: 14px;
+    }
+    
+    .book-btn{
+        
+        font-size: 14px;  
+    }
+    .booknow{
+       
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+   
+}
+

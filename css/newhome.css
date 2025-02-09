@@ -1,0 +1,574 @@
+/* Base Styles (Default) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    
+    line-height: 1.6;
+    
+}
+
+header {
+    background-image: url(images/gallery-2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;;
+    position: relative;
+    transition: background-image 0.7s ease-in-out;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.Logo {
+   width: 200px;
+   height:100px;
+   background-size: cover;
+   
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+   
+}
+
+
+.nav-link li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+
+
+
+.Menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.Menu span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.description1 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    left:10%;
+    transform: translate(-10%, -10%);
+
+}
+
+.description1 h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow:2px 3px 2px rgb(0, 0, 0) ;
+}
+.trip{
+    margin-top: 50px;
+}
+
+
+
+.description1 .trip a {
+    
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+.description1 .trip a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Section Styles */
+.Welcome,
+.tour-packages,
+.why-choose {
+    text-align: center;
+    width: 100%;
+    /* background-color: rgb(222, 222, 222); */
+}
+
+.Welcome h1,
+.tour-packages h1,
+.why-choose h1 {
+    font-size: 35px;
+    margin: 100px 0 30px 0;
+}
+
+.Welcome p,
+.why-choose p {
+    font-size: 16px;
+    margin: 30px auto 60px auto;
+    max-width: 800px;
+}
+
+/*beautysl images*/
+.but-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  margin-top: 100px;
+}
+.but-image {
+    width: 25%;
+    transition: transform 0.3s ease;
+}
+.but-image:hover{
+    transform:scale(1.05);
+}
+.but-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Tour Packages */
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.tour-packages .tour{
+    margin-bottom:50px;
+    font-size: 20px;
+}
+
+.package {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 20%;
+    background-color: rgb(241, 235, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.tour-packages .packages .package:hover{
+    transition:transform 1.5s ease;
+    transform: translateX(0%);
+    transform: translateY(-4%);
+box-shadow: 5px 5px 10px  rgba(0, 0, 0, 1.7);
+cursor: pointer;
+
+}
+
+.package:hover{
+    transform:scale(1.05);
+}
+
+.package img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.package h3 {
+    margin: 15px 0;
+}
+.package p{
+      
+    margin: 0 5px 30px 5px;
+}
+
+.package .price {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size:20px;
+}
+
+.book{
+    background-color: rgb(2, 90, 133);;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+.book:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.details{
+    background-color:rgb(74, 72, 72);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.details:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.view-more-btn{
+    text-align: center;
+    margin:50px 0 100px ;
+    font-size: 18px;  
+}
+.view-more{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.view-more:hover{
+    background-color:rgb(3, 3, 3,0.5);
+}
+
+/* Features Section */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.feature {
+    text-align: center;
+    width: 200px;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    /* margin-bottom: 10px; */
+}
+.feature h2{
+    font-size: 25px;
+}
+
+.plan{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 150px auto;
+}
+.srilanka img{
+    width:100%;
+}
+.plan-content{
+    align-items: center; 
+}
+.plan-content h2{
+    margin-bottom: 30px;
+    font-size:35px;
+}
+input,textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 400px;
+}
+.sub{
+    width: 100px;
+    padding: 10px;
+    margin-top:20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.sub:hover{
+    background-color:rgb(3, 3, 3,0.5);
+}
+
+footer{
+    background-color:black;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    width:100%;
+    box-sizing:border-box;
+   
+}
+.footer-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:100%;
+    padding:30px 0;
+    margin: 0 auto;
+}
+
+.footer-item h3{
+font-size:1.5rem;
+margin-bottom:10px;
+}
+.footer-item p{
+    margin:5px 0;
+}
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:10px;
+}
+.social-link{
+    color:white;
+    font-size:1.5rem;
+    
+}
+.social-link:hover{
+    transform:scale(1.2);
+}
+.social-link:nth-child(1):hover{
+    color:#426782;
+}
+.social-link:nth-child(2):hover{
+    color:#1DA1F2;
+}
+.social-link:nth-child(3):hover{
+    color:#E1306C;
+}
+.social-link:nth-child(4):hover{
+    color:#25D366;
+}
+.social-link:nth-child(5):hover{
+    color:#ff0000;
+}
+.footer-bottom{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    width:100%;
+    padding:10px 0;
+    
+}
+
+    
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    nav .nav-link {
+        display: none;
+    }
+
+    .Menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav-link.active {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-link li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .description1 h1 {
+        font-size: 50px;
+    }
+
+    .Logo {
+        width: 130px;
+    }
+
+    .package {
+        width: 30%;
+    }
+}
+
+/* For 990px and below */
+@media (max-width: 990px) {
+   
+    .description1 h1 {
+        font-size: 40px;
+    }
+
+    .packages {
+        gap: 15px;
+    }
+
+    .package {
+        width: 40%;
+    }
+    .plan{
+        flex-direction: column;
+    }
+    .srilanka img{
+        width:60%;
+        margin-bottom:100px ;
+    }
+}
+
+/* For 768px and below */
+@media (max-width: 768px) {
+    .description1 h1 {
+        font-size: 40px;
+    }
+
+    .Welcome h1,
+    .tour-packages h1,
+    .why-choose h1 {
+        font-size: 28px;
+    }
+
+    .tour-packages .tour{
+        font-size: 16px;
+        
+    }
+    
+    .Welcome p,.tour-packages p,
+    .why-choose p{
+        font-size: 16px;
+    }
+
+    .package {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .features {
+        flex-direction:row;
+        align-items: center;
+        
+    }
+
+    .feature {
+        margin-bottom: 20px;
+        width: 40%;
+    }
+    .footer-container{
+        flex-direction:column;
+        text-align: center;
+    }
+    .footer-item h3 {
+        font-size: 20px;
+    }
+
+
+    .footer-item p {
+        font-size: 14px;
+    }
+
+    .social-link {
+        font-size: 1.2rem; /* Adjust icon size for smaller screens */
+    }
+}
+
+/* For 450px and below */
+@media (max-width: 450px) {
+    .description1 h1 {
+        font-size:30px;
+    }
+
+    .description1 .trip a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .Logo {
+        width: 100px;
+        height:50px;
+    }
+  
+    .package {
+        width: 80%;
+    }
+
+   
+    .footer-item {
+        margin-bottom: 20px;
+    }
+    .feature h2{
+        font-size: 20px;
+    }
+    .plan-content h2{
+        font-size:28px;    
+    }
+    input,textarea{
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+        width: 300px;
+    }
+    .view-more{
+        text-decoration: none;
+        background-color:black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    .Welcome p,
+    .why-choose p {
+    font-size: 14px;
+    }
+    header{
+        height: 60vh;
+    }
+    .description1{
+        top:30%;
+
+    }
+}

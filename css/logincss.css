@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+/* Header Section */
+ header{
+    height:auto;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.Logo {
+    width: 200px;
+    height:100px;
+    background-size: cover;
+    
+ }
+
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin: 0 10px;
+    font-size: 18px;
+    
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: rgb(253, 249, 249);
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-link li a:hover {
+    background-color: rgb(239, 236, 236);
+    border-radius: 5px;
+    color: black;
+}
+
+.Menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.Menu span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+.login-page {
+    display: flex;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.image {
+    flex: 1; /* Takes up half of the screen */
+    background: url("elephant1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.log {
+    flex: 1; /* Takes up the other half */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 233);
+    padding: 50px;
+}
+
+.log-box {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.log-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.log-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.log-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.log-box input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.log-box button {
+    
+    padding: 10px;
+    background-color: #1d006d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.log-box button:hover {
+    background-color: #320dca;
+}
+
+.log-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.log-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.log-box a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+    .Logo {
+        width: 130px;
+    }
+}
+
+
+@media (max-width: 990px) {
+    nav .nav-link {
+        display: none;
+    }
+
+    .Menu {
+        display: flex;
+    }
+
+    .nav-link.active {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-link li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .Logo {
+        
+            width: 130px;
+            height: 50px;
+        
+        }
+        .login-page {
+            flex-direction: column;
+            height: fit-content;
+        }
+    
+        .image {
+            height: 40vh;
+            flex: none;
+        }
+    
+        .log {
+            flex: none;
+            padding: 20px;
+        }
+       
+  
+}
+
+@media (max-width: 450px) {
+  
+} 
